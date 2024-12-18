@@ -1,4 +1,4 @@
-# Template Component - Article List
+# Template Component - ArticleModel List
 ## Prerequisites
 Setup bootstrap in your project: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 Provide HttpClient to your application. The best choice is to add provideHttpClient to providers in main.ts.
@@ -42,7 +42,7 @@ When an article is displayed
 Then the article title should be shown in an "h2" element
 And the article content should be shown in a "p" element
 3. Show / Hide Picture
-   Feature: Show or Hide Article Image
+   Feature: Show or Hide ArticleModel Image
 
 Scenario: Initially display "Show Image" button
 Given I am on the main page
@@ -61,8 +61,8 @@ and the image is currently shown
 When I click the "Hide Image" button
 Then the article image should be hidden
 And the button label should change to "Show Image"
-4. Create / Edit Article
-   Feature: Create or Edit an Article
+4. Create / Edit ArticleModel
+   Feature: Create or Edit an ArticleModel
 
 Scenario: Show form to create a new article
 Given I am on the main page
@@ -95,7 +95,7 @@ When I submit the form
 Then the data should be sent via PUT to "https://636ce2d8ab4814f2b2712854.mockapi.io/articles-with-comments/:articleId"
 And the form panel should be hidden after a successful save
 
-Scenario: Preview Article in edit and create mode
+Scenario: Preview ArticleModel in edit and create mode
 Given I am on the main page
 And I am in edit article mode or create article mode
 When I type anything in the form
